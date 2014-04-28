@@ -1,12 +1,11 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
-void ofApp::setup(){	
-    
+void ofApp::setup(){
     ofSetOrientation(OF_ORIENTATION_90_LEFT);
     number = 0;
     font.loadFont("apr.otf", 32);
-    
+
     int buttonSize = ofGetWidth()/8;
     for (int i = 0 ; i < 8; i++) {
         inputs[i].set(ofGetWidth() - i*buttonSize, ofGetHeight()-buttonSize, -buttonSize, buttonSize);
